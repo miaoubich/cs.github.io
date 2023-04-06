@@ -1,0 +1,78 @@
+body{
+    background-color: #989480;
+    font-family: Arial, sans-serif ;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {text-align: center;}
+
+h1+a{
+    color: brown;
+}
+
+h1,h3 {
+    color: blue;
+}
+
+p::first-letter{
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p em, p strong {
+    color: rgb(168, 248, 8);
+}
+
+ol li a{
+    color: red;
+}
+
+img{
+    border-radius: 5%
+}
+
+#wep {
+    background-color: yellow;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 3pt;
+    text-shadow: 130px 15px rgb(150, 8, 8);
+    width:fit-content
+}
+
+ul li:nth-child(1){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-style: italic;
+}
+
+.Neighbor2{
+    font-family: cursive;
+    color: rgb(5, 89, 5);
+    list-style: upper-alpha;
+}
+
+ol li:nth-child(1){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+ol li:nth-child(2){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+ol li:nth-child(3){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+ol li:nth-child(4){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
