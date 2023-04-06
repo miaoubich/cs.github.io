@@ -3,7 +3,6 @@ body{
     font-family: Arial, sans-serif ;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -38,7 +37,7 @@ img{
     border-radius: 5%
 }
 
-#wep {
+#wap {
     background-color: yellow;
     font-size: 1.3em;
     font-weight: bold;
