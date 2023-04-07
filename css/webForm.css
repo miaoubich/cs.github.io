@@ -1,0 +1,58 @@
+.body1 {
+    font-size: 30px;
+}
+
+.body2 {
+    font-size: 20px;
+}
+
+.web-form-1 {
+    width: 1300px;
+    height: 700px;
+    margin: 150px auto;
+}
+
+.nav1 {
+    height: 40px;
+    background-color: black;
+}
+
+#abtn {
+    background-color: rgb(248, 243, 243);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.buttons{
+    width: 536px;
+    text-align: right;
+}
+.buttons buttons {
+    width: 200px;
+}
+.validate{
+    font-size: 15px;
+    margin-top: 0px;
+    opacity: 0.75;
+}
+#products, #suppliers{
+    border-left: 1px solid white;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+.back {
+    float: left;
+    margin:5px;
+}
+h2 {
+    margin: 50px 0px;
+    font-family: Arial;
+    color: black;
+    opacity: 0.7;
+}

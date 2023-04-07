@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <link href="../css/webForm.css" type="text/css" rel="stylesheet">
+  <title>Web Form-2</title>
+</head>
+
+<body class="body2">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">MUM Golden Dome Market : : : SRM System </a>
+          </li>
+          <li id="products" class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li id="suppliers" class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
+
+        </ul>
+        <span class="navbar-text">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active nav-right">
+              <a class="nav-link" href="#">Hello!</a>
+            </li>
+            &nbsp;
+            <li class="nav-item active nav-right">
+              <a class="nav-link" id="abtn" href="#">Sign Out</a>
+            </li>
+          </ul>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a href="../index.html">
+      <img src="../img/Back.avif" width="45" height="40" class="d-inline-block align-top back" alt="Jubilee">
+    </a>
+    <div class="container">
+      <h2>New Product Form</h2>
+      <form action="#" class="web-form-2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              Product Number
+              <input class="form-control" id="productNumber" name="productNumber">
+            </div>
+            <div class="form-group">
+              Name
+              <input class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              Unit Price
+              <input type="number" class="form-control" id="unitPrice" placeholder="0.0" name="unitPrice">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              Quantity in stock
+              <input class="form-control" id="quantity" placeholder="0" name="quantity">
+            </div>
+            <div class="form-group">
+              Supplier
+              <select class="form-control">
+                <option value="" selected disabled>Select a supplier</option>
+                <option value="1">One</option>
+                <option value="2">Tow</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+              </select>
+            </div>
+            <div class="form-group">
+              Date supplier
+              <input type="text" class="form-control" pattern="\d{4}-\d{2}-\d{2}" id="date" required
+                placeholder="yyyy-mm-dd" name="date">
+              <span class="validate">Enter a valid Date</span>
+            </div>
+
+            <div class="buttons">
+              <button type="submit" class="btn btn-outline-dark">Reset</button>
+              <button type="submit" class="btn btn-outline-danger">Cancel</button>
+              <button type="submit" class="btn btn-outline-primary">Add Product</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
