@@ -33,6 +33,10 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Password is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter" placeholder="Password">
         </div>
+        <div class="form-group">
+          <label for="web-site">Website</label>
+          <input type="text" class="form-control" required pattern="https?://.+" title="The url have to begin with http:// or https://" placeholder="Enter Website">
+        </div>
         <div class="checkbox">
           <label><input type="checkbox" name="remember"> Check me out</label>
         </div>
