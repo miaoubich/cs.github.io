@@ -1,4 +1,4 @@
-"use strinct";
+"use strict";
 
 // 1.
 function max(first, second) {
@@ -12,28 +12,41 @@ function max(first, second) {
 max(10, 19);
 
 //2. 
-function maxOfThree(first, second, third) {
+function maxOfThree() {
+    let max = -Infinity;
+    for (let i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+console.log("Max of three is: " + maxOfThree(15, 114, 61));
+//or
+function maxOfThree1(first, second, third) {
     let largest = Math.max(first, second, third);
     console.log("The largest number among (" + first + ", " + second + ", " + third + ") is: " + largest);
 }
-maxOfThree(15, 14, 61);
+maxOfThree1(15, 14, 61);
 
 //3. 
 function isVowel(char) {
     let arr = ['a', 'e', 'i', 'o', 'u'];
     if (arr.includes(char)) {
-        console.log(char + " is a vowel");
+        return true;
     } else {
-        console.log(char + " is not a vowel");
+        return false;
     }
 }
-isVowel('u');
+console.log(isVowel('p'));
+console.log(isVowel('i'));
 
 //4.
 const arr = [1, 2, 3, 4];
 function sum(arr) {
     let result = 0;
     for (let i = 0; i < arr.length; i++) {
+        // for(let i of arr){
         result += arr[i];
     }
     console.log("Sum is: " + result);
@@ -163,14 +176,14 @@ printFibo(6, 0, 1);
 function sum(arr) {
     let result = 0;
     let newArr = arr.filter(a => a > 20)
-                    .map(b => result += b);
+        .map(b => result += b);
     return result;
 }
 console.log("Sum of numbers greater than 20 is: " + sum([10, 35, 15, 20, 25, 30]));
 
 //14.2:
-function getNewArray(strings){
-    return strings.filter(s => s.length>=5)
-                  .filter(m => m.includes('a'));
+function getNewArray(strings) {
+    return strings.filter(s => s.length >= 5)
+        .filter(m => m.includes('a'));
 }
 console.log("NewArray is: [" + getNewArray(["animal", "cat", "power", "america", "sand", "sandy"]) + "]");
