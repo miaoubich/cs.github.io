@@ -6,12 +6,18 @@
 let student = {
     firstName: "Ali",
     lastName: "Bouzar",
-    grades: []
+    grades: [],
+    inputNewGrade: function (grade) {
+        this.grades.push(grade);
+    },
+    computeAverageGrade: function () {
+        return this.grades.reduce((sum, curr, i, arr) => sum + curr / arr.length, 0);
+    }
 };
-student.grades.push(6);
-student.grades.push(4);
-student.grades.push(6);
-student.grades.push(8);
+student.inputNewGrade(6);
+student.inputNewGrade(4);
+student.inputNewGrade(6);
+student.inputNewGrade(8);
 
 // Calculate student's grades average
 let sum = 0;
@@ -66,11 +72,15 @@ let avgTotal = () => {
 }
 console.log("Average Grades for all the students: " + avgTotal());
 
+//ro usu reduce
+let avgReduce = students.reduce((sum, grade, i, arr) => sum + grade.computeAverageGrade() / arr.length, 0);
+console.log("Avg with reduce: " + avgReduce);
+
 
 /* Question 2 */
 
 //Using constructor function
-function StudentFunction(fName, lName, grades) {
+function StudentFunction(fName, lName, grades = []) {
     this.firstName = fName,
         this.lastName = lName,
         this.grades = grades
@@ -147,5 +157,19 @@ animalArray.sort((animal1, animal2) => {
 
 }
 );
+Array.prototype.mysort = function () {
+    let arr = this;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                let temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log("Array sorted: " + [7, 5, 2, 4, 3, 9, 1].mysort());
 console.log(animalArray);
 
