@@ -33,3 +33,7 @@ footer {
     font-style: italic;
     font-size: medium;
 }
+
+.d-none-age{
+    display: none;
+}
