@@ -54,10 +54,10 @@ function displayElderlyPatients(){
         }
         console.log("Age: " + age + " years");
 
-        if(chkElderlyPatients.checked && parseInt(age)>=65){
-            rows[i].classList.add("d-none");
+        if(chkElderlyPatients.checked && parseInt(age)<65){
+            rows[i].classList.add("d-none-age");
         }else if(!chkElderlyPatients.checked){
-            rows[i].classList.remove("d-none");
+            rows[i].classList.remove("d-none-age");
         }
     }
 }
